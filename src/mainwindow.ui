@@ -44,8 +44,22 @@
      </widget>
     </item>
     <item row="1" column="1">
-     <layout class="QHBoxLayout" name="horizontalLayout_3">
-      <item>
+<!--      <layout class="QHBoxLayout" name="horizontalLayout_3"> -->
+<!--       <item> -->
+     <widget class="QSplitter" name="splitter">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="childrenCollapsible">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="leftWidget">
        <layout class="QVBoxLayout" name="verticalLayout">
         <item>
          <widget class="QWidget" name="profileWidget" native="true">
@@ -214,8 +228,10 @@
          </widget>
         </item>
        </layout>
-      </item>
-      <item>
+<!--  </item>-->
+      </widget>
+      <widget class="QWidget" name="rightWidget">
+<!--  <item>-->
        <layout class="QVBoxLayout" name="verticalLayoutPassword">
         <property name="spacing">
          <number>0</number>
@@ -333,8 +349,10 @@
          </widget>
         </item>
        </layout>
-      </item>
-     </layout>
+<!--       </item> -->
+<!--      </layout> -->
+      </widget>
+     </widget>
     </item>
    </layout>
   </widget>
